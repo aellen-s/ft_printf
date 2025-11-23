@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printft.h                                       :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aellen-s <aellen-s@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/15 19:16:11 by aellen-s          #+#    #+#             */
-/*   Updated: 2025/11/15 19:21:44 by aellen-s         ###   ########.fr       */
+/*   Created: 2025/11/17 18:25:41 by aellen-s          #+#    #+#             */
+/*   Updated: 2025/11/17 19:23:36 by aellen-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <unistd.h>
-
-#endif
+int	ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return(1);
+}
