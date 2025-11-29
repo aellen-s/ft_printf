@@ -6,7 +6,7 @@
 #    By: aellen-s <aellen-s@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/15 17:54:36 by aellen-s          #+#    #+#              #
-#    Updated: 2025/11/22 16:03:51 by aellen-s         ###   ########.fr        #
+#    Updated: 2025/11/27 17:12:35 by aellen-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CC = gcc
 CFLAGS = -Wall - Wextra - Werror
 
 #Files and object files
-SRCS = ft_putchar.c 
+SRCS = ft_putchar.c ft_putstr.c
 OBJS = $(SRCS:.c=.o)
 
 #Comands

@@ -16,19 +16,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-typedef struct s_flags
-{
-	int	spec;      // Especificador do tipo: c, s, d, etc.
-	int	width;     // Largura do campo
-	int	left;      // Alinhamento à esquerda
-	int	zero;      // Preenchimento com zeros
-	int	star;      // Indicação de * (largura/precisão via argumento)
-	int	precision; // Precisão na impressão
-	int	hash;      // Flag '#' (exibe 0x em hex, etc.)
-	int	space;     // Flag ' ' (espaço extra antes do positivo)
-	int	plus;      // Flag '+' (exibe sinal em números positivos)
-}		t_flags;
-
 int	ft_putchar(char c);
+int ft_putstr(const char *str);
 
 #endif
