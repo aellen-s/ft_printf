@@ -6,7 +6,7 @@
 #    By: aellen-s <aellen-s@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/15 17:54:36 by aellen-s          #+#    #+#              #
-#    Updated: 2025/11/27 17:12:35 by aellen-s         ###   ########.fr        #
+#    Updated: 2025/11/29 19:45:03 by aellen-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,10 +15,11 @@ NAME = libftprintf.a
 
 #Compiler and flag compiler
 CC = gcc
-CFLAGS = -Wall - Wextra - Werror
+CFLAGS = -Wall -Wextra -Werror
 
 #Files and object files
-SRCS = ft_putchar.c ft_putstr.c
+SRCS = ft_putchar.c ft_putstr.c ft_puthex.c ft_puthex_long.c ft_putnbr.c \
+	ft_putnbr_unsigned.c ft_putptr.c
 OBJS = $(SRCS:.c=.o)
 
 #Comands

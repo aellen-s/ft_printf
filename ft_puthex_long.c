@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_puthex.c                                        :+:      :+:    :+:   */
+/*   ft_puthex_long.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aellen-s <aellen-s@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/27 17:16:24 by aellen-s          #+#    #+#             */
-/*   Updated: 2025/11/29 18:12:26 by aellen-s         ###   ########.fr       */
+/*   Created: 2025/11/29 18:32:31 by aellen-s          #+#    #+#             */
+/*   Updated: 2025/11/29 18:36:43 by aellen-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned int n, char format)
+int	ft_puthex_long(unsigned long n)
 {
-    int	i;
-    char	*digits;
+	int	i;
+	char	*digits;
 
 	i = 0;
-	if (format == 'x')
-		digits = "0123456789abcdef";
-	else
-		digits = "0123456789ABCDEF";
+	digits = "0123456789abcdef";
 	if (n >= 16)
-		i += ft_puthex(n / 16, format);
+		i += ft_puthex_long(n / 16);
 	i += ft_putchar(digits[n % 16]);
-    return (i);
+	return (i);
 }
