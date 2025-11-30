@@ -6,7 +6,7 @@
 /*   By: aellen-s <aellen-s@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 18:32:31 by aellen-s          #+#    #+#             */
-/*   Updated: 2025/11/29 18:36:43 by aellen-s         ###   ########.fr       */
+/*   Updated: 2025/11/30 15:30:49 by aellen-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_puthex_long(unsigned long n)
 {
-	int	i;
+	int		i;
 	char	*digits;
 
 	i = 0;

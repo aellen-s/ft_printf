@@ -17,6 +17,11 @@
 # include <unistd.h>
 
 int	ft_putchar(char c);
-int ft_putstr(const char *str);
+int	ft_putstr(const char *str);
+int	ft_puthex(unsigned int n, char format);
+int	ft_puthex_long(unsigned long n);
+int	ft_putnbr(int n);
+int	ft_putnbr_unsigned(unsigned int n);
+int	ft_putptr(void *str);
 
 #endif
