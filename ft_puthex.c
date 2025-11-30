@@ -6,7 +6,7 @@
 /*   By: aellen-s <aellen-s@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 17:16:24 by aellen-s          #+#    #+#             */
-/*   Updated: 2025/11/30 15:15:07 by aellen-s         ###   ########.fr       */
+/*   Updated: 2025/11/30 17:15:55 by aellen-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_puthex(unsigned int n, char format)
 	i = 0;
 	if (format == 'x')
 		digits = "0123456789abcdef";
-	else
+	else if (format == 'X')
 		digits = "0123456789ABCDEF";
 	if (n >= 16)
 		i += ft_puthex(n / 16, format);

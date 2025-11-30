@@ -6,7 +6,7 @@
 /*   By: aellen-s <aellen-s@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 18:59:48 by aellen-s          #+#    #+#             */
-/*   Updated: 2025/11/30 15:16:48 by aellen-s         ###   ########.fr       */
+/*   Updated: 2025/11/30 17:53:01 by aellen-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_putnbr(int n)
 		i = ft_putchar('-');
 		n = -n;
 	}
-	if (n > 10)
+	if (n >= 10)
 		i += ft_putnbr(n / 10);
 	i += ft_putchar((n % 10) + '0');
 	return (i);

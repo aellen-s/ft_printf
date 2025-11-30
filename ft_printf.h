@@ -24,4 +24,6 @@ int	ft_putnbr(int n);
 int	ft_putnbr_unsigned(unsigned int n);
 int	ft_putptr(void *str);
 
+int	ft_printf(const char *format, ...);
+
 #endif
